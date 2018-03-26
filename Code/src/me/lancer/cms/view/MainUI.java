@@ -156,19 +156,19 @@ public class MainUI extends JPanel {
 				@SuppressWarnings("deprecation")
 				@Override
 				public void actionPerformed(ActionEvent e) {
-//					if (txtUsrName.getText().length() > 0 && txtPassWord.getText().length() > 0) {
-//						List<Employee> empList = new EmployeeSrv()
-//								.Fetch("(emp_no=" + txtUsrName.getText() + " or " + "emp_name='" + txtUsrName.getText()
-//										+ "') and " + "emp_password='" + txtPassWord.getText() + "'");
-//						if (empList.size() > 0) {
-//							setRst(empList.get(0).getId());
-//						} else {
-//							setRst(-1);
-//						}
-//					} else {
-//						setRst(-2);
-//					}
-					setRst(1);//test
+					if (txtUsrName.getText().length() > 0 && txtPassWord.getText().length() > 0) {
+						List<Employee> empList = new EmployeeSrv()
+								.Fetch("(emp_no='" + txtUsrName.getText() + "' or " + "emp_name='" + txtUsrName.getText()
+										+ "') and " + "emp_password='" + txtPassWord.getText() + "'");
+						if (empList.size() > 0) {
+							setRst(empList.get(0).getId());
+						} else {
+							setRst(-1);
+						}
+					} else {
+						setRst(-2);
+					}
+					
 					dispose();
 				}
 

@@ -60,16 +60,16 @@ public class SellTicketHandler {
 		double price = 0;
 		String info = "";
 		for (Ticket t : ticketList) {
-			info += "影片：" + t.getPlayName() + "\n";
-			info += "场次：" + DateFormat.getDateTimeInstance().format(t.getSchedule().getTime()) + "\n";
-			info += "座位：" + t.getSeat().getRow() + "排" + t.getSeat().getColumn() + "座\n";
-			info += "价格：" + t.getSchedule().getPrice() + "元\n\n";
+			info += "Moive：" + t.getPlayName() + "\n";
+			info += "Time：" + DateFormat.getDateTimeInstance().format(t.getSchedule().getTime()) + "\n";
+			info += "Seat：" + t.getSeat().getRow() + "Row" + t.getSeat().getColumn() + "Column\n";
+			info += "Price：" + t.getSchedule().getPrice() + "Dollars\n\n";
 			i++;
 			price += t.getSchedule().getPrice();
 		}
 		if (ticketList.size() > 0) {
 			info += "=================\n";
-			info += "共" + i + "张票  " + price + "元\n";
+			info +=  i + "Tickets total  $" + price + "\n";
 		}
 		return info;
 	}

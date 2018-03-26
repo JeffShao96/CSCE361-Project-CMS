@@ -14,7 +14,7 @@ public class EmployeeDAO implements iEmployeeDAO {
 	@Override
 	public int insert(Employee emp) {
 		try {
-			String sqlstr = "insert into employee(emp_access, emp_no, emp_name, emp_password, emp_addr, emp_tel_num, emp_email ) values( "
+			String sqlstr = "insert into employee(emp_access, emp_no, emp_name, emp_password, emp_addr, emp_tel, emp_email ) values( "
 					+ emp.getAccess() + ", " + emp.getNo() + ", '" + emp.getName() + "', '" + emp.getPassword() + "', '"
 					+ emp.getAddr() + "', '" + emp.getTel() + "', '" + emp.getEmail() + "')";
 			DBUtil db = new DBUtil();
