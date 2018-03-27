@@ -200,12 +200,12 @@ public class SaleUI extends JPanel {
 
 			lblEmployee = new JLabel("Employee");
 			lblEmployee.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblEmployee.setBounds(80, 30, 60, 30);
+			lblEmployee.setBounds(80, 30, 100, 30);
 			pan.add(lblEmployee);
 
 			txtEmployee = new JTextField("");
 			txtEmployee.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			txtEmployee.setBounds(140, 30, 120, 30);
+			txtEmployee.setBounds(200, 30, 120, 30);
 			pan.add(txtEmployee);
 
 			lblTime = new JLabel("Time");
@@ -214,27 +214,27 @@ public class SaleUI extends JPanel {
 			pan.add(lblTime);
 			txtTime = new JTextField("");
 			txtTime.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			txtTime.setBounds(140, 65, 120, 30);
+			txtTime.setBounds(200, 65, 120, 30);
 			pan.add(txtTime);
 
 			lblPayment = new JLabel("Payment");
-			lblPayment.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 16));
-			lblPayment.setBounds(80, 100, 60, 30);
+			lblPayment.setFont(new Font("Times New Romen", Font.PLAIN, 16));
+			lblPayment.setBounds(80, 100, 80, 30);
 			pan.add(lblPayment);
 
 			txtPayment = new JTextField("");
 			txtPayment.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			txtPayment.setBounds(140, 100, 120, 30);
+			txtPayment.setBounds(200, 100, 120, 30);
 			pan.add(txtPayment);
 
 			lblChange = new JLabel("Refund");
 			lblChange.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblChange.setBounds(80, 135, 60, 30);
+			lblChange.setBounds(80, 135, 80, 30);
 			pan.add(lblChange);
 
 			txtChange = new JTextField("");
 			txtChange.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			txtChange.setBounds(140, 135, 120, 30);
+			txtChange.setBounds(200, 135, 120, 30);
 			pan.add(txtChange);
 
 			lblType = new JLabel("Type");
@@ -244,17 +244,17 @@ public class SaleUI extends JPanel {
 
 			txtType = new JTextField("");
 			txtType.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			txtType.setBounds(140, 170, 120, 30);
+			txtType.setBounds(200, 170, 120, 30);
 			pan.add(txtType);
 
 			lblStatus = new JLabel("Condition");
 			lblStatus.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblStatus.setBounds(80, 205, 60, 30);
+			lblStatus.setBounds(80, 205, 80, 30);
 			pan.add(lblStatus);
 
 			txtStatus = new JTextField("");
 			txtStatus.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			txtStatus.setBounds(140, 205, 120, 30);
+			txtStatus.setBounds(200, 205, 120, 30);
 			pan.add(txtStatus);
 
 			if (flag == 2) {
@@ -285,7 +285,7 @@ public class SaleUI extends JPanel {
 
 			btnNot = new JButton("Cancel");
 			btnNot.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			btnNot.setBounds(width - 106, height - 80, 66, 30);
+			btnNot.setBounds(width - 106, height - 80, 90, 30);
 			btnNot.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {

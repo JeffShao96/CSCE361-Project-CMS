@@ -331,7 +331,7 @@ public class DataDictUI extends JPanel {
 
 	public void showAllLeafTable(List<DataDict> leafList) {
 		DataDictTable tms = new DataDictTable(ddict);
-		Object[] in = { "ID", "Father Node", "Coordinate", "Name", "Value" };
+		Object[] in = { "ID", "Parent", "Coordinate", "Name", "Value" };
 		if (rst.size() > 0) {
 			leafList = rst;
 		}
@@ -342,7 +342,7 @@ public class DataDictUI extends JPanel {
 
 	public void showTable() {
 		DataDictTable tms = new DataDictTable(ddict);
-		Object[] in = { "ID", "Father Node", "Coordinate", "Name", "Value" };
+		Object[] in = { "ID", "Parent", "Coordinate", "Name", "Value" };
 		List<DataDict> dictList = new LinkedList<DataDict>();
 		new DataDictSrv().findAllSonByID(dictList, 1);
 		if (rst.size() > 0) {
@@ -386,15 +386,15 @@ public class DataDictUI extends JPanel {
 				}
 			});
 
-			lblParent = new JLabel("Father node : ");
+			lblParent = new JLabel("Parent: ");
 			lblParent.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblParent.setBounds(80, 30, 60, 30);
+			lblParent.setBounds(80, 30, 120, 30);
 			pan.add(lblParent);
 			txtParent = new JTextField();
 			txtParent.setBounds(140, 30, 120, 30);
 			pan.add(txtParent);
 
-			lblName = new JLabel("Name : ");
+			lblName = new JLabel("Name: ");
 			lblName.setFont(new Font("Times New Romen", Font.PLAIN, 16));
 			lblName.setBounds(80, 65, 60, 30);
 			pan.add(lblName);
@@ -402,7 +402,7 @@ public class DataDictUI extends JPanel {
 			txtName.setBounds(140, 65, 120, 30);
 			pan.add(txtName);
 
-			lblValue = new JLabel("Value : ");
+			lblValue = new JLabel("Value: ");
 			lblValue.setFont(new Font("Times New Romen", Font.PLAIN, 16));
 			lblValue.setBounds(80, 100, 60, 30);
 			pan.add(lblValue);
@@ -439,7 +439,7 @@ public class DataDictUI extends JPanel {
 
 			btnNot = new JButton("Cancel");
 			btnNot.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			btnNot.setBounds(frmWidth - 106, frmHeight - 80, 66, 30);
+			btnNot.setBounds(frmWidth - 106, frmHeight - 80, 90, 30);
 			btnNot.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {

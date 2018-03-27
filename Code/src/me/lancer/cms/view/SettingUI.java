@@ -180,20 +180,20 @@ public class SettingUI extends JPanel {
 
 				lblAccess1 = new JLabel("Authority: ");
 				lblAccess1.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblAccess1.setBounds(80, 30, 60, 30);
+				lblAccess1.setBounds(80, 30, 120, 30);
 				pan.add(lblAccess1);
 				lblAccess2 = new JLabel("");
 				lblAccess2.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblAccess2.setBounds(140, 30, 240, 30);
+				lblAccess2.setBounds(200, 30, 240, 30);
 				pan.add(lblAccess2);
 
 				lblNo1 = new JLabel("Workers Number: ");
 				lblNo1.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblNo1.setBounds(80, 65, 60, 30);
+				lblNo1.setBounds(80, 65, 150, 30);
 				pan.add(lblNo1);
 				lblNo2 = new JLabel("");
 				lblNo2.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblNo2.setBounds(140, 65, 240, 30);
+				lblNo2.setBounds(200, 65, 240, 30);
 				pan.add(lblNo2);
 
 				lblName1 = new JLabel("Name: ");
@@ -202,34 +202,34 @@ public class SettingUI extends JPanel {
 				pan.add(lblName1);
 				lblName2 = new JLabel("");
 				lblName2.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblName2.setBounds(140, 100, 240, 30);
+				lblName2.setBounds(200, 100, 240, 30);
 				pan.add(lblName2);
 
 				lblAddr1 = new JLabel("Address: ");
 				lblAddr1.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblAddr1.setBounds(80, 135, 60, 30);
+				lblAddr1.setBounds(80, 135, 120, 30);
 				pan.add(lblAddr1);
 				lblAddr2 = new JLabel("");
 				lblAddr2.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblAddr2.setBounds(140, 135, 240, 30);
+				lblAddr2.setBounds(200, 135, 240, 30);
 				pan.add(lblAddr2);
 
 				lblTel1 = new JLabel("Phone Number: ");
 				lblTel1.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblTel1.setBounds(80, 170, 60, 30);
+				lblTel1.setBounds(80, 170, 150, 30);
 				pan.add(lblTel1);
 				lblTel2 = new JLabel();
 				lblTel2.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblTel2.setBounds(140, 170, 240, 30);
+				lblTel2.setBounds(200, 170, 240, 30);
 				pan.add(lblTel2);
 
 				lblEmail1 = new JLabel("E-mail: ");
 				lblEmail1.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblEmail1.setBounds(80, 205, 60, 30);
+				lblEmail1.setBounds(80, 205, 120, 30);
 				pan.add(lblEmail1);
 				lblEmail2 = new JLabel();
 				lblEmail2.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblEmail2.setBounds(140, 205, 240, 30);
+				lblEmail2.setBounds(200, 205, 240, 30);
 				pan.add(lblEmail2);
 
 				lblAccess2.setText(accessList[emp.getAccess() - 1]);
@@ -259,10 +259,10 @@ public class SettingUI extends JPanel {
 
 				lblNo = new JLabel("Workers Number : ");
 				lblNo.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblNo.setBounds(80, 30, 60, 30);
+				lblNo.setBounds(80, 30, 120, 30);
 				pan.add(lblNo);
 				txtNo = new JTextField();
-				txtNo.setBounds(140, 30, 120, 30);
+				txtNo.setBounds(200, 30, 120, 30);
 				pan.add(txtNo);
 
 				lblName = new JLabel("Name: ");
@@ -270,39 +270,39 @@ public class SettingUI extends JPanel {
 				lblName.setBounds(80, 65, 60, 30);
 				pan.add(lblName);
 				txtName = new JTextField();
-				txtName.setBounds(140, 65, 120, 30);
+				txtName.setBounds(200, 65, 120, 30);
 				pan.add(txtName);
 
 				lblPassWord = new JLabel("Password: ");
 				lblPassWord.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblPassWord.setBounds(80, 100, 60, 30);
+				lblPassWord.setBounds(80, 100, 120, 30);
 				pan.add(lblPassWord);
 				txtPassWord = new JPasswordField();
-				txtPassWord.setBounds(140, 100, 120, 30);
+				txtPassWord.setBounds(200, 100, 120, 30);
 				pan.add(txtPassWord);
 
 				lblAddr = new JLabel("Address: ");
 				lblAddr.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblAddr.setBounds(80, 135, 60, 30);
+				lblAddr.setBounds(80, 135, 80, 30);
 				pan.add(lblAddr);
 				txtAddr = new JTextField();
-				txtAddr.setBounds(140, 135, 120, 30);
+				txtAddr.setBounds(200, 135, 120, 30);
 				pan.add(txtAddr);
 
 				lblTel = new JLabel("Phone Number: ");
 				lblTel.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblTel.setBounds(80, 170, 60, 30);
+				lblTel.setBounds(80, 170, 120, 30);
 				pan.add(lblTel);
 				txtTel = new JTextField();
-				txtTel.setBounds(140, 170, 120, 30);
+				txtTel.setBounds(200, 170, 120, 30);
 				pan.add(txtTel);
 
 				lblEmail = new JLabel("E-mail: ");
 				lblEmail.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				lblEmail.setBounds(80, 205, 60, 30);
+				lblEmail.setBounds(80, 205, 80, 30);
 				pan.add(lblEmail);
 				txtEmail = new JTextField();
-				txtEmail.setBounds(140, 205, 120, 30);
+				txtEmail.setBounds(200, 205, 120, 30);
 				pan.add(txtEmail);
 
 				txtName.setText(emp.getName());
@@ -335,7 +335,7 @@ public class SettingUI extends JPanel {
 
 				btnNot = new JButton("Cancel");
 				btnNot.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-				btnNot.setBounds(width - 106, height - 80, 66, 30);
+				btnNot.setBounds(width - 106, height - 80, 90, 30);
 				btnNot.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {

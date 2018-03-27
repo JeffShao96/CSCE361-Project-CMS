@@ -177,7 +177,7 @@ public class MainUI extends JPanel {
 
 			btnNot = new JButton("Cancel");
 			btnNot.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			btnNot.setBounds(frmWidth - 106, frmHeight - 80, 66, 30);
+			btnNot.setBounds(frmWidth - 106, frmHeight - 80, 90, 30);
 			btnNot.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {

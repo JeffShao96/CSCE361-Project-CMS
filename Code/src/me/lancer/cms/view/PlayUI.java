@@ -242,19 +242,19 @@ public class PlayUI extends JPanel {
 			}
 			model1 = new ArrayListComboBoxModel((ArrayList<String>) typeList);
 			cbxType = new JComboBox<String>(model1);
-			cbxType.setBounds(140, 30, 120, 30);
+			cbxType.setBounds(200, 30, 120, 30);
 			pan.add(cbxType);
 
 			lblLang = new JLabel("Language: ");
 			lblLang.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblLang.setBounds(80, 65, 60, 30);
+			lblLang.setBounds(80, 65, 120, 30);
 			pan.add(lblLang);
 			for (DataDict item : new DataDictSrv().Fetch("dict_parent_id=3")) {
 				langList.add(item.getName());
 			}
 			model2 = new ArrayListComboBoxModel((ArrayList<String>) langList);
 			cbxLang = new JComboBox<String>(model2);
-			cbxLang.setBounds(140, 65, 120, 30);
+			cbxLang.setBounds(200, 65, 120, 30);
 			pan.add(cbxLang);
 
 			lblName = new JLabel("Name: ");
@@ -262,15 +262,15 @@ public class PlayUI extends JPanel {
 			lblName.setBounds(80, 100, 60, 30);
 			pan.add(lblName);
 			txtName = new JTextField();
-			txtName.setBounds(140, 100, 120, 30);
+			txtName.setBounds(200, 100, 120, 30);
 			pan.add(txtName);
 
 			lblIntroduction = new JLabel("Desciption: ");
 			lblIntroduction.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblIntroduction.setBounds(80, 135, 60, 30);
+			lblIntroduction.setBounds(80, 135, 120, 30);
 			pan.add(lblIntroduction);
 			txtIntroduction = new JTextField();
-			txtIntroduction.setBounds(140, 135, 120, 30);
+			txtIntroduction.setBounds(200, 135, 120, 30);
 			pan.add(txtIntroduction);
 
 			lblLength = new JLabel("Time: ");
@@ -278,7 +278,7 @@ public class PlayUI extends JPanel {
 			lblLength.setBounds(80, 170, 60, 30);
 			pan.add(lblLength);
 			txtLength = new JTextField();
-			txtLength.setBounds(140, 170, 120, 30);
+			txtLength.setBounds(200, 170, 120, 30);
 			pan.add(txtLength);
 
 			lblPrice = new JLabel("Value: ");
@@ -286,15 +286,15 @@ public class PlayUI extends JPanel {
 			lblPrice.setBounds(80, 205, 60, 30);
 			pan.add(lblPrice);
 			txtPrice = new JTextField();
-			txtPrice.setBounds(140, 205, 120, 30);
+			txtPrice.setBounds(200, 205, 120, 30);
 			pan.add(txtPrice);
 
 			lblStatus = new JLabel("Condition: ");
 			lblStatus.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblStatus.setBounds(80, 240, 60, 30);
+			lblStatus.setBounds(80, 240, 120, 30);
 			pan.add(lblStatus);
 			txtStatus = new JTextField();
-			txtStatus.setBounds(140, 240, 120, 30);
+			txtStatus.setBounds(200, 240, 120, 30);
 			pan.add(txtStatus);
 
 			if (flag == 3 || flag == 4) {
@@ -330,7 +330,7 @@ public class PlayUI extends JPanel {
 
 			btnNot = new JButton("Cancel");
 			btnNot.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			btnNot.setBounds(width - 106, height - 80, 66, 30);
+			btnNot.setBounds(width - 106, height - 80, 90, 30);
 			btnNot.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {

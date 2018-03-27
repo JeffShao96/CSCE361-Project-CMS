@@ -12,26 +12,26 @@ import java.util.Properties;
 public class DBUtil {
 	private final String dbConnFile = "resource/database/jdbc.properties";
 	private Connection conn=null;
-//	private String dbDriver;	//定义驱动  
-//    private String dbURL;		//定义URL  
-//    private String userName;	//定义用户名  
-//    private String password;	//定义密码	
+//	private String dbDriver;	
+//    private String dbURL;	
+//    private String userName;	
+//    private String password;	
     public static final String dbURL = "jdbc:mysql://cse.unl.edu/haozhoul";
 	public static final String userName = "haozhoul";
 	public static final String password = "SGwB8E";
 	public static final String dbDriver="com.mysql.jdbc.Driver";
     
-    //从配置文件取数据库链接参数  
+  
 //    private void loadConnProperties(){  
 //        Properties props = new Properties();  
 //        try {  
-//            props.load(new FileInputStream(dbConnFile));//根据配置文件路径Conf加载配置文件  
+//            props.load(new FileInputStream(dbConnFile));
 //        } catch (FileNotFoundException e) {  
 //            e.printStackTrace();  
 //        } catch (IOException e) {  
 //            e.printStackTrace();  
 //        }  
-//        this.dbDriver = props.getProperty("driver");//从配置文件中取得相应的参数并设置类变量  
+//        this.dbDriver = props.getProperty("driver");
 //        this.dbURL = props.getProperty("url");  
 //        this.userName = props.getProperty("username");  
 //        this.password = props.getProperty("password");  
@@ -65,7 +65,7 @@ public class DBUtil {
      }
 	
 	
-	// 查询并得到结果集
+
 	public ResultSet execQuery(String sql) throws Exception {
 		ResultSet rstSet = null;
 		try {
@@ -79,7 +79,7 @@ public class DBUtil {
 		return rstSet;
 	}
 
-	// 插入一条新纪录，并获取标识列的值
+
 	public ResultSet getInsertObjectIDs(String insertSql) throws Exception{
 		ResultSet rst = null;
 		try {
@@ -97,7 +97,7 @@ public class DBUtil {
 		return rst;
 	}
 
-	// 插入、更新、删除
+	
 	public int execCommand(String sql) throws Exception{
 		int flag = 0;
 		try {
@@ -114,8 +114,7 @@ public class DBUtil {
 		return flag;
 	}
 
-	// add by @author Wang
-	// 2016 5 29
+
 	public PreparedStatement execPrepared(String psql) throws Exception {
 		PreparedStatement pstmt = null ;
 		try {
@@ -127,8 +126,8 @@ public class DBUtil {
 		}
 		return pstmt;
 	}
-		
-	// 释放资源
+
+	
 	public void close(ResultSet rst) throws Exception {
 		try {
 			Statement stmt = rst.getStatement();
@@ -140,7 +139,7 @@ public class DBUtil {
 	}
 	
 
-	// 释放资源
+
 	public void close(Statement stmt) throws Exception {
 		try {
 			stmt.close();
@@ -149,7 +148,7 @@ public class DBUtil {
 		}
 	}
 	
-	// 释放资源
+
 	public void close() throws SQLException, Exception{
 		if(null!=conn){
 			conn.close();

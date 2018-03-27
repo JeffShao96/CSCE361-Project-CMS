@@ -228,39 +228,39 @@ public class StudioUI extends JPanel {
 			lblName.setBounds(80, 30, 60, 30);
 			pan.add(lblName);
 			txtName = new JTextField();
-			txtName.setBounds(140, 30, 120, 30);
+			txtName.setBounds(200, 30, 120, 30);
 			pan.add(txtName);
 
-			lblRow = new JLabel("Column: ");
+			lblRow = new JLabel("Row: ");
 			lblRow.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblRow.setBounds(80, 65, 60, 30);
+			lblRow.setBounds(80, 65, 80, 30);
 			pan.add(lblRow);
 			txtRow = new JTextField();
-			txtRow.setBounds(140, 65, 120, 30);
+			txtRow.setBounds(200, 65, 120, 30);
 			pan.add(txtRow);
 
-			lblCol = new JLabel("Row: ");
+			lblCol = new JLabel("Column: ");
 			lblCol.setFont(new Font("Times New Romen", Font.PLAIN, 16));
 			lblCol.setBounds(80, 100, 60, 30);
 			pan.add(lblCol);
 			txtCol = new JTextField();
-			txtCol.setBounds(140, 100, 120, 30);
+			txtCol.setBounds(200, 100, 120, 30);
 			pan.add(txtCol);
 
 			lblIntroduction = new JLabel("Description: ");
 			lblIntroduction.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblIntroduction.setBounds(80, 135, 60, 30);
+			lblIntroduction.setBounds(80, 135, 120, 30);
 			pan.add(lblIntroduction);
 			txtIntroduction = new JTextField();
-			txtIntroduction.setBounds(140, 135, 120, 30);
+			txtIntroduction.setBounds(200, 135, 120, 30);
 			pan.add(txtIntroduction);
 
 			lblFlag = new JLabel("Condition: ");
 			lblFlag.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblFlag.setBounds(80, 170, 60, 30);
+			lblFlag.setBounds(80, 170, 80, 30);
 			pan.add(lblFlag);
 			txtFlag = new JTextField();
-			txtFlag.setBounds(140, 170, 120, 30);
+			txtFlag.setBounds(200, 170, 120, 30);
 			pan.add(txtFlag);
 
 			if (flag == 3 || flag == 4) {
@@ -293,7 +293,7 @@ public class StudioUI extends JPanel {
 
 			btnNot = new JButton("Cancel");
 			btnNot.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			btnNot.setBounds(width - 106, height - 80, 66, 30);
+			btnNot.setBounds(width - 106, height - 80, 90, 30);
 			btnNot.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {

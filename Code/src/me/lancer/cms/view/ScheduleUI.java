@@ -235,7 +235,7 @@ public class ScheduleUI extends JPanel {
 
 			lblStudio = new JLabel("Studio:");
 			lblStudio.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblStudio.setBounds(80, 30, 60, 30);
+			lblStudio.setBounds(80, 30, 90, 30);
 			pan.add(lblStudio);
 			for (Studio item : new StudioSrv().FetchAll()) {
 				studList.add(item.getName());
@@ -268,7 +268,7 @@ public class ScheduleUI extends JPanel {
 
 			lblPrice = new JLabel("Price: ");
 			lblPrice.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblPrice.setBounds(80, 135, 60, 30);
+			lblPrice.setBounds(80, 135, 80, 30);
 			pan.add(lblPrice);
 
 			txtPrice = new JTextField();
@@ -305,7 +305,7 @@ public class ScheduleUI extends JPanel {
 
 			btnNot = new JButton("Cancel");
 			btnNot.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			btnNot.setBounds(width - 106, height - 80, 66, 30);
+			btnNot.setBounds(width - 106, height - 80, 90, 30);
 			btnNot.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {

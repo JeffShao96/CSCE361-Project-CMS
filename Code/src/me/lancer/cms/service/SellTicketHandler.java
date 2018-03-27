@@ -60,10 +60,10 @@ public class SellTicketHandler {
 		double price = 0;
 		String info = "";
 		for (Ticket t : ticketList) {
-			info += "Moive£º" + t.getPlayName() + "\n";
-			info += "Time£º" + DateFormat.getDateTimeInstance().format(t.getSchedule().getTime()) + "\n";
-			info += "Seat£º" + t.getSeat().getRow() + "Row" + t.getSeat().getColumn() + "Column\n";
-			info += "Price£º" + t.getSchedule().getPrice() + "Dollars\n\n";
+			info += "Movie:" + t.getPlayName() + "\n";
+			info += "Time:" + DateFormat.getDateTimeInstance().format(t.getSchedule().getTime()) + "\n";
+			info += "Seat:" + t.getSeat().getRow() + "Row" + t.getSeat().getColumn() + "Column\n";
+			info += "Price:" + t.getSchedule().getPrice() + "Dollars\n\n";
 			i++;
 			price += t.getSchedule().getPrice();
 		}

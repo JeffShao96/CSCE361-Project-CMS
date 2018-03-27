@@ -378,7 +378,7 @@ public class SeatUI extends JPanel {
 
 			lblTxt2 = new JLabel("" + flagList[seat.getSeatStatus() + 1]);
 			lblTxt2.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblTxt2.setBounds(140, 30, 120, 30);
+			lblTxt2.setBounds(200, 30, 120, 30);
 			pan.add(lblTxt2);
 
 			lblEdit = new JLabel("Edit: ");
@@ -387,7 +387,7 @@ public class SeatUI extends JPanel {
 			pan.add(lblEdit);
 
 			cbxFlag = new JComboBox<String>(flagList);
-			cbxFlag.setBounds(140, 65, 120, 30);
+			cbxFlag.setBounds(200, 65, 120, 30);
 			pan.add(cbxFlag);
 
 			lblPayment1 = new JLabel("Payable: ");
@@ -396,7 +396,7 @@ public class SeatUI extends JPanel {
 			pan.add(lblPayment1);
 			lblPayment2 = new JLabel("$ "+ prices);
 			lblPayment2.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			lblPayment2.setBounds(140, 100, 60, 30);
+			lblPayment2.setBounds(200, 100, 60, 30);
 			pan.add(lblPayment2);
 
 			lblPayment = new JLabel("Price: ");
@@ -404,7 +404,7 @@ public class SeatUI extends JPanel {
 			lblPayment.setBounds(80, 135, 110, 30);
 			pan.add(lblPayment);
 			txtPayment = new JTextField();
-			txtPayment.setBounds(140, 135, 60, 30);
+			txtPayment.setBounds(200, 135, 60, 30);
 			pan.add(txtPayment);
 
 			btnChoose = new JButton("Select");
