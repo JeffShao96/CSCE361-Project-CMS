@@ -83,7 +83,7 @@ public class SettingUI extends JPanel {
 		});
 		this.add(btnHelp);
 
-		JButton btnSwitch = new JButton("Change Account");
+		/*JButton btnSwitch = new JButton("Change Account");
 		btnSwitch.setFont(new Font("Times New Romen", Font.PLAIN, 16));
 		btnSwitch.addActionListener(new ActionListener() {
 			@Override
@@ -92,7 +92,7 @@ public class SettingUI extends JPanel {
 			}
 
 		});
-		this.add(btnSwitch);
+		this.add(btnSwitch);*/
 
 		JButton btnExit = new JButton("Quit");
 		btnExit.setFont(new Font("Times New Romen", Font.PLAIN, 16));
@@ -125,12 +125,12 @@ public class SettingUI extends JPanel {
 		gbc.weighty = 1;
 		gbc.insets = new Insets(25, 200, 25, 200);
 		gbl.setConstraints(btnHelp, gbc);
-		gbc.gridwidth = 0;
+		/*gbc.gridwidth = 0;
 		gbc.gridheight = 1;
 		gbc.weightx = 1;
 		gbc.weighty = 1;
 		gbc.insets = new Insets(25, 200, 25, 200);
-		gbl.setConstraints(btnSwitch, gbc);
+		gbl.setConstraints(btnSwitch, gbc);*/
 		gbc.gridwidth = 0;
 		gbc.gridheight = 1;
 		gbc.weightx = 1;

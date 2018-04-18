@@ -409,7 +409,7 @@ public class SeatUI extends JPanel {
 
 			btnChoose = new JButton("Select");
 			btnChoose.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			btnChoose.setBounds(40, height -90, 90, 30);
+			btnChoose.setBounds(95, height -90, 90, 30);
 			btnChoose.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {
@@ -422,7 +422,7 @@ public class SeatUI extends JPanel {
 			pan.add(btnChoose);
 			btnBuy = new JButton("Buy");
 			btnBuy.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			btnBuy.setBounds(130, height - 90, 90, 30);
+			btnBuy.setBounds(185, height - 90, 90, 30);
 			btnBuy.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {
@@ -433,22 +433,22 @@ public class SeatUI extends JPanel {
 			});
 			pan.add(btnBuy);
 
-			btnBye = new JButton("Refund");
-			btnBye.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			btnBye.setBounds(220, height - 90, 90, 30);
-			btnBye.addActionListener(new ActionListener() {
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					btnByeClicked(sseat);
-					dispose();
-				}
-
-			});
-			pan.add(btnBye);
+//			btnBye = new JButton("Refund");
+//			btnBye.setFont(new Font("Times New Romen", Font.PLAIN, 16));
+//			btnBye.setBounds(220, height - 90, 90, 30);
+//			btnBye.addActionListener(new ActionListener() {
+//				@Override
+//				public void actionPerformed(ActionEvent e) {
+//					btnByeClicked(sseat);
+//					dispose();
+//				}
+//
+//			});
+//			pan.add(btnBye);
 
 			btnEdit = new JButton("Edit");
 			btnEdit.setFont(new Font("Times New Romen", Font.PLAIN, 16));
-			btnEdit.setBounds(310, height - 90, 90, 30);
+			btnEdit.setBounds(275, height - 90, 90, 30);
 			btnEdit.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {
